@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.netflix-logo svg {
+    min-width: 120px;
+    max-width: 150px;
+}
+
+.nav_btn button {
+    min-width: 50px;
+    max-width: 150px;
+}
+
+.nav_btn button:nth-child(2){
+    display: none;
+}
+
+.pageDimension{
+    min-height: 30rem;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+}
+
+.pageDimension img{
+    object-fit: cover;
+}
+
+.pageDimension h4{
+    font-size: 1.1rem;
+}
+
+.pageDimension input{
+    background-color: rgba(0, 0, 0, 0.178); 
+    border: 1px solid white;
+}
+
+.border_big{
+    max-width: 100%;
+    height: 10px;
+    background-color: #232323;
+}
+
+.smallSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.smallSection h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.smallSection h3{
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.smallSection img{
+    place-self: center;
+    width: 350px;
+}
+
+.freqSection{
+    display: grid;
+    grid-template-columns: minmax(300px, 1000px);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.freqSection h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.freqOption{
+    cursor: pointer;
+}
+
+.freqOption-menu{
+    background-color: #282828;
+}
+
+.freqOption h4{
+    font-weight: 500;
+}
+
+.freqOption-menu:hover{
+    background-color: #585858;
+}
+
+.freqOption-additionData{
+    background-color: #282828;
+
+}
+
+.freqOption-additionData h5{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+/* sm */
+@media screen and (min-width: 576px) {
+    .nav_btn button{
+        min-width: 80px;
+    }
+    .smallSection h1{
+        font-size: 2rem;
+    }
+    .smallSection h3{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    .nav_btn button{
+        min-width: 100px;
+    }
+    .nav_btn button:nth-child(1){
+        display: none;
+    }
+    .nav_btn button:nth-child(2){
+        display: block;
+    }
+    .pageDimension{
+        min-height: 43rem;
+    }   
+    .pageDimension h1{
+        font-size: 4rem;
+    }
+    .pageDimension h4{
+        font-size: 1.5rem;
+    }
+    .smallSection img{
+        width: 400px;
+    }
+    .smallSection{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 5rem 0;
+    }
+    .smallSection h1{
+        font-size: 3rem;
+    }
+    .smallSection h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .freqSection h2{
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
